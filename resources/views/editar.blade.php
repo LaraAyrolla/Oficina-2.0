@@ -38,7 +38,7 @@
                             <input class="form-control" name="vendedor" id="vendedor" required="true" value="{{ $orcamento->vendedor }}">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" name="valorOrcado" id="valorOrcado" required="true" type="number" value="{{ $orcamento->valor_orcado }}">
+                            <input class="form-control" name="valorOrcado" id="valorOrcado" required="true" type="number" step="0.01" min="0" value="{{ $orcamento->valor_orcado }}">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" name="descricao" id="descricao" required="true" rows="4">{{ $orcamento->descricao }}</textarea>
