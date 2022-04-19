@@ -26,4 +26,3 @@ Route::get('/editar/{id}', 'OrcamentoController@edit');
 Route::post('/update', 'OrcamentoController@update');
 Route::get('/resultados/{id}', 'OrcamentoController@delete');
 Route::get('/resultados', 'OrcamentoController@delete');
-
