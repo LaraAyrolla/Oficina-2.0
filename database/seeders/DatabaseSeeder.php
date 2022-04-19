@@ -7,12 +7,12 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Popula o banco de dados da aplicação.
      *
      * @return void
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call(OrcamentosSeeder::class);
     }
 }

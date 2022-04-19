@@ -56,7 +56,7 @@
                             <input class="form-control" name="vendedor" id="vendedor" required="true" placeholder="Nome do Vendedor">
                         </div>
                         <div class="form-group">
-                            <input class="form-control" name="valorOrcado" id="valorOrcado" required="true" type="number" placeholder="Valor Orçado (R$)">
+                            <input class="form-control" name="valorOrcado" id="valorOrcado" required="true" type="number" step="0.01" min="0" placeholder="Valor Orçado (R$)">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" name="descricao" id="descricao" required="true" rows="4" placeholder="Descrição"></textarea>
