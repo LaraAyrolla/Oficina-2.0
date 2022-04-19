@@ -291,6 +291,7 @@ class OrcamentoController extends Controller{
             return view('/home', ['success'=>'true']);
         }catch(Throwable $e){
             report($e);
+            return view('/home', ['success'=>'false']);
         }
         return view('/home', ['success'=>'false']);
     }
@@ -308,8 +309,8 @@ class OrcamentoController extends Controller{
                         [$chave]);
             return view('/home', ['successdel'=>'true']);
         }catch(Throwable $e){
-            return view('/resultados', ['successdel'=>'false']);
+            return view('/home', ['successdel'=>'false']);
         }
-        return view('/resultados', ['successdel'=>'false']);
+        return view('/home', ['successdel'=>'false']);
     }
 }
